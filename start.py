@@ -23,8 +23,7 @@ asyncio.run(main())
 print("\n"+"*"*40)
 
 #running multiple tasks with asyncio.gather()
-import asyncio
-import time 
+
 print("*"*40,"\n")
 print("case 2")
 async def download_file(file_number):
@@ -45,7 +44,6 @@ async def main():
 asyncio.run(main())
 print("\n"+"*"*40)
 #fetch data from coroutines
-import asyncio
 print("*"*40,"\n")
 print("case 3")
 async def fetch_data(n):
@@ -58,7 +56,7 @@ async def main():
         fetch_data(2),
         fetch_data(3)
     )
-    print("fecthef data",results)
+    print("fecth data",results)
 
 asyncio.run(main())
 print("\n"+"*"*40)
